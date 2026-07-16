@@ -29,4 +29,10 @@ class TestOddEvenSort(unittest.TestCase):
         arr = [0.1, 0.4, 0.05]
         with self.assertRaises(TypeError):
             odd_even_sort(arr)
+            
+    def test_odd_even_sort6(self):
+        arr = [1]
+        odd_even_sort(arr)
+        self.assertEqual(arr, [1])
+    
     

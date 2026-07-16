@@ -1,7 +1,7 @@
 import unittest
 from .gnome_sort import gnome_sort
 
-
+"""pytest test_gnome_sort.py"""
 class TestGnomeSort(unittest.TestCase):
     def test_gnome_sort1(self):
         arr = [4, 3, 1, 2]
@@ -27,6 +27,11 @@ class TestGnomeSort(unittest.TestCase):
         arr = [0.1, 0.4, 0.05]
         gnome_sort(arr)
         self.assertEqual(arr, [0.05, 0.1, 0.4])
+    
+    def test_gnome_sort6(self):
+        arr = [1]
+        gnome_sort(arr)
+        self.assertEqual(arr, [1])
 
 if __name__ == '__main__':
     unittest.main()

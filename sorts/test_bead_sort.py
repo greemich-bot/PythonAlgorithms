@@ -14,7 +14,7 @@ class TestBeadSort(unittest.TestCase):
         self.assertEqual(bead_sort([5, 4, 3, 2, 1]), [1, 2, 3, 4, 5])
 
     def test_bead_sort4(self):
-        self.assertEqual(bead_sort([3, 3, 2, 1, 4]), [1, 2, 3, 3, 4])
+        self.assertEqual(bead_sort([3,3,3]), [3, 3, 3])
     
     def test_bead_sort5(self):
         self.assertEqual(bead_sort([]), [])

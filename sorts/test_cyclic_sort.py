@@ -41,3 +41,9 @@ class TestCyclicSort(unittest.TestCase):
         arr = [0.1, 0.4, 0.05]
         with self.assertRaises(TypeError):
             cyclic_sort(arr)
+    
+    def test_cyclic_sort6(self):
+        """test single-element array"""
+        arr = [1]
+        cyclic_sort(arr)
+        self.assertEqual(arr, [1])
